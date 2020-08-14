@@ -13,6 +13,8 @@
     <div class="jumbotron">
       <h1 class="display-2">Programming Language Selector</h1>
       <p class="lead">Have an interest in learning how to program? This website is dedicated to helping you pick your first programming language. Fill out the survey below to find out which language will best suit your need.</p>
+      <hr class="my-2">
+      <button id="form-reveal" class="btn btn-primary btn-lg" type="button">Click to begin</button>
     </div>
     <div class="container">
       <form id="survey">
@@ -61,7 +63,18 @@
             <option value="c">Flexible</option>
           </select>
         </div>
+        <div class="form-group show well">
+          <label for="question-6">Question 6 — What is your name?</label>
+          <input type="text" class="form-control" id="name" placeholder="Name">
+        </div>
       </form>
+      <div class="container">
+        <div id="display">
+          <div id="results">
+            
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
