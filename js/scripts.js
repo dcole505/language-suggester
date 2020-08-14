@@ -1,6 +1,22 @@
 //Business Logic
-function resultTally() {
+function resultTally(answers) {
+  let countA = 0;
+  let countB = 0;
+  let countC = 0;
 
+  answers.forEach(answer => {
+    switch (answer) {
+      case 'a':
+        countA += 1;
+        break;
+      case 'b':
+        countB += 2;
+        break;
+      case 'c':
+        countC += 3;
+        break;
+    }
+  });
 }
 //User Interface Logic
 $(document).ready(function() {
