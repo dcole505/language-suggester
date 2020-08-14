@@ -6,10 +6,31 @@
   padding-right: 50px;
 }
 
+img {
+  width: 250px;
+  height: 250px;
+}
+
 #survey {
   display: none;
 }
 
 #results {
+  display: none;
+}
+
+#ruby {
+  display: none;
+}
+
+#java {
+  display: none;
+}
+
+#javascript {
+  display: none;
+}
+
+#python {
   display: none;
 }
