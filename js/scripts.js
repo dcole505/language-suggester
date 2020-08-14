@@ -17,7 +17,18 @@ function resultTally(answers) {
         break;
     }
   });
+
+  if(countA > countB && countA > countC) {
+    
+  } else if (countB > countA && countB > countC) {
+
+  } else if (countC > countA && countC > countB) {
+
+  } else {
+    
+  }
 }
+
 //User Interface Logic
 $(document).ready(function() {
   $("#form-reveal").click(function(event) {
