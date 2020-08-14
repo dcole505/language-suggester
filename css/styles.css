@@ -5,3 +5,11 @@
   padding-left: 50px;
   padding-right: 50px;
 }
+
+#survey {
+  display: none;
+}
+
+#results {
+  display: none;
+}
