@@ -18,16 +18,16 @@
     </div>
     <div class="container">
       <form id="survey">
-        <div class="form-group show well">
+        <div class="form-group row">
           <label for="question-1">Question 1 — Which quality is more desirable in the context of a first language?</label>
           <select id="question-1" class="form-control">
             <option disabled selected hidden>Choose one</option>
             <option value="a">Easy to read/write</option>
-            <option value="c">Found almost everywhere</option>
-            <option value="d">Formost language of the web</option>
+            <option value="b">Found almost everywhere</option>
+            <option value="c">Formost language of the web</option>
           </select>
         </div>
-        <div class="form-group show well">
+        <div class="form-group row">
           <label for="question-2">Question 2 — What aspect of development intrigues you most?</label>
           <select id="question-2" class="form-control">
             <option disabled selected hidden>Choose one</option>
@@ -36,7 +36,7 @@
             <option value="c">Both</option>
           </select>
         </div>
-        <div class="form-group show well">
+        <div class="form-group row">
           <label for="question-3">Question 3 — Among the following websites, which would you rather work on?</label>
           <select id="question-3" class="form-control">
             <option disabled selected hidden>Choose one</option>
@@ -45,7 +45,7 @@
             <option value="c">Google</option>
           </select>
         </div>
-        <div class="form-group show well">
+        <div class="form-group row">
           <label for="question-4">Question 4 — If you wanted to see your future, which would you consult?</label>
           <select id="question-4" class="form-control">
             <option disabled selected hidden>Choose one</option>
@@ -54,7 +54,7 @@
             <option value="c">A talking Rhinoceros</option>
           </select>
         </div>
-        <div class="form-group show well">
+        <div class="form-group row">
           <label for="question-5">Question 5 — What best description do you like most?</label>
           <select id="question-5" class="form-control">
             <option disabled selected hidden>Choose one</option>
@@ -63,10 +63,11 @@
             <option value="c">Flexible</option>
           </select>
         </div>
-        <div class="form-group show well">
+        <div class="form-group row">
           <label for="question-6">Question 6 — What is your name?</label>
           <input type="text" class="form-control" id="name" placeholder="Name">
         </div>
+        <button class="btn btn-primary btn-lg" type="submit">Submit</button>
       </form>
       <div class="container">
         <div id="display">
@@ -74,37 +75,37 @@
             <h1 id="display-header">Results</h1>
             <p>Hello <span class="user-name"></span>! Thanks for taking the survey. According to your responses, it has been determined that the following language would be an ideal first language for you to learn: </p>
           </div>
-        </div>
-        <div class="card" id="ruby">
-          <img class="card-img-top card-layout" src="img/ruby.png" alt="Ruby Programming Language">
-          <div class="card-body">
-            <h3 class="card-title">Ruby Programming Language</h3>
-            <p class="card-text">"A dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write."</p>
-            <a href="https://www.ruby-lang.org/en/" class="btn btn-primary" target="_blank">Learn more</a>
+          <div class="card" id="ruby">
+            <img class="card-img-top card-layout" src="img/ruby.png" alt="Ruby Programming Language">
+            <div class="card-body">
+              <h3 class="card-title">Ruby Programming Language</h3>
+              <p class="card-text">"A dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write."</p>
+              <a href="https://www.ruby-lang.org/en/" class="btn btn-primary" target="_blank">Learn more</a>
+            </div>
           </div>
-        </div>
-        <div class="card" id="java">
-          <img class="card-img-top card-layout" src="img/java.jpg" alt="Java Programming Language">
-          <div class="card-body">
-            <h3 class="card-title">Java Programming Language</h3>
-            <p class="card-text">"The Java Programming Language is a general purpose, concurrent, strongly typed, class-based object-oriented language."</p>
-            <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/language/index.html" class="btn btn-primary" target="_blank">Learn more</a>
+          <div class="card" id="java">
+            <img class="card-img-top card-layout" src="img/java.jpg" alt="Java Programming Language">
+            <div class="card-body">
+              <h3 class="card-title">Java Programming Language</h3>
+              <p class="card-text">"The Java Programming Language is a general purpose, concurrent, strongly typed, class-based object-oriented language."</p>
+              <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/language/index.html" class="btn btn-primary" target="_blank">Learn more</a>
+            </div>
           </div>
-        </div>
-        <div class="card" id="javascript">
-          <img class="card-img-top card-layout" src="img/javascript.png" alt="JavaScript Programming Language">
-          <div class="card-body">
-            <h3 class="card-title">JavaScript Programming Language</h3>
-            <p class="card-text">"JavaScript is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat."</p>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" class="btn btn-primary" target="_blank">Learn more</a>
+          <div class="card" id="javascript">
+            <img class="card-img-top card-layout" src="img/javascript.png" alt="JavaScript Programming Language">
+            <div class="card-body">
+              <h3 class="card-title">JavaScript Programming Language</h3>
+              <p class="card-text">"JavaScript is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions. While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat."</p>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" class="btn btn-primary" target="_blank">Learn more</a>
+            </div>
           </div>
-        </div>
-        <div class="card" id="python">
-          <img class="card-img-top card-layout" src="img/python.png" alt="Python Programming Language">
-          <div class="card-body">
-            <h3 class="card-title">Python Programming Language</h3>
-            <p class="card-text">"Python is powerful...and fast; plays well with others; runs everywhere; is friendly & easy to learn; is Open."</p>
-            <a href="https://www.python.org/" class="btn btn-primary" target="_blank">Learn more</a>
+          <div class="card" id="python">
+            <img class="card-img-top card-layout" src="img/python.png" alt="Python Programming Language">
+            <div class="card-body">
+              <h3 class="card-title">Python Programming Language</h3>
+              <p class="card-text">"Python is powerful...and fast; plays well with others; runs everywhere; is friendly & easy to learn; is Open."</p>
+              <a href="https://www.python.org/" class="btn btn-primary" target="_blank">Learn more</a>
+            </div>
           </div>
         </div>
       </div>

@@ -10,28 +10,51 @@ function resultTally(answers) {
         countA += 1;
         break;
       case 'b':
-        countB += 2;
+        countB += 1;
         break;
       case 'c':
-        countC += 3;
+        countC += 1;
         break;
     }
   });
 
+  console.log(countA);
+  console.log(countB);
+  console.log(countC);
+
   if(countA > countB && countA > countC) {
-    
+    $("#ruby").fadeIn();
+    $("#java").hide();
+    $("#javascript").hide();
+    $("#python").hide();
   } else if (countB > countA && countB > countC) {
-
+    $("#java").fadeIn();
+    $("#ruby").hide();
+    $("#javascript").hide();
+    $("#python").hide();
   } else if (countC > countA && countC > countB) {
-
+    $("#javascript").fadeIn();
+    $("#ruby").hide();
+    $("#java").hide();
+    $("#python").hide();
   } else {
-    
+    $("#python").fadeIn();
+    $("#ruby").hide();
+    $("#java").hide();
+    $("#javascript").hide();
   }
 }
 
 //User Interface Logic
 $(document).ready(function() {
   $("#form-reveal").click(function(event) {
+    event.preventDefault();
+    
+    $("#survey").show();
+    $("#display").hide();
+    });
+  
+  $("#survey").submit(function(){
     event.preventDefault();
     const answers = [
       $("#question-1").val(),
@@ -42,7 +65,10 @@ $(document).ready(function() {
     ];
     const name = $("#name").val();
 
-    $("#survey").toggle();
-    $("#display").toggle();
+    $(".user-name").text(name);
+    $("#survey").hide();
+    $("#display").show();
+
+    resultTally(answers);
   });
 })
