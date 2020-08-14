@@ -1,8 +1,10 @@
 //Business Logic
+function resultTally() {
 
+}
 //User Interface Logic
 $(document).ready(function() {
-  $("#form-reveal").click(function(event){
+  $("#form-reveal").click(function(event) {
     event.preventDefault();
     const answers = [
       $("#question-1").val(),
