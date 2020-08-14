@@ -1,3 +1,7 @@
+body {
+  margin-bottom: 50px;
+}
+
 .jumbotron {
   background-color: #0c254d;
   color: whitesmoke;
@@ -9,13 +13,22 @@
 img {
   width: 250px;
   height: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #0c254d;
+  display: block;
+  padding-top: 50px;
+}
+
+#display-header {
+  text-align: center;
+}
+
+.card {
+  text-align: center;
 }
 
 #survey {
-  display: none;
-}
-
-#results {
   display: none;
 }
 
