@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/jquery-3.5.1.js"></script>
     <script src="js/scripts.js"></script>
-    <title>TITLE</title>
+    <title>Language Selector</title>
   </head>
   <body>
     <div class="jumbotron">
@@ -16,13 +16,41 @@
     </div>
     <div class="container">
       <form id="survey">
-        <div class="form-group row">
-          <label for="first-name" class="col-sm-3 col-form-label">Enter your first name</label>
-          <input type="text" class="form-control" id="first-name" placeholder="First Name">
+        <div class="form-group show well">
+          <label for="question-1">Question 1 — Which quality is more desirable in the context of a first language?</label>
+          <select id="question-1" class="form-control">
+            <option disabled selected hidden>Choose one</option>
+            <option value="a">Easy to read/write</option>
+            <option value="c">Found almost everywhere</option>
+            <option value="d">Formost language of the web</option>
+          </select>
         </div>
-        <div class="form-group row">
-          <label for="last-name" class="col-sm-3 col-form-label">Enter your first name</label>
-          <input type="text" class="form-control" id="last-name" placeholder="Last Name">
+        <div class="form-group show well">
+          <label for="question-2">Question 2 — What aspect of development intrigues you most?</label>
+          <select id="question-2" class="form-control">
+            <option disabled selected hidden>Choose one</option>
+            <option value="a">Server-side</option>
+            <option value="b">Client-side</option>
+            <option value="c">Both</option>
+          </select>
+        </div>
+        <div class="form-group show well">
+          <label for="question-3">Question 3 — Among the following websites, which would you rather work on?</label>
+          <select id="question-3" class="form-control">
+            <option disabled selected hidden>Choose one</option>
+            <option value="a">Twitch</option>
+            <option value="b">Linkedin</option>
+            <option value="c">Google</option>
+          </select>
+        </div>
+        <div class="form-group show well">
+          <label for="question-4">Question 4 — If you wanted to see your future, which would you consult?</label>
+          <select id="question-3" class="form-control">
+            <option disabled selected hidden>Choose one</option>
+            <option value="a">A glowing gemstone</option>
+            <option value="b">An oracle</option>
+            <option value="c">A talking Rhinoceros</option>
+          </select>
         </div>
       </form>
     </div>
