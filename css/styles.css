@@ -26,6 +26,10 @@ img {
   text-align: center;
 }
 
+#results p {
+  margin-bottom: 20px;
+}
+
 .card {
   text-align: center;
 }
