@@ -50,6 +50,7 @@ $(document).ready(function() {
   $("#form-reveal").click(function(event) {
     event.preventDefault();
     
+    $("#survey")[0].reset();
     $("#survey").show();
     $("#display").hide();
     });
