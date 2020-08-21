@@ -56,9 +56,5 @@ $(document).ready(function() {
     $("#display").show();
 
     resultTally(answers);
-
-    $(".reload").click(function(){
-      location.reload(true);
-    });
   });
 })
