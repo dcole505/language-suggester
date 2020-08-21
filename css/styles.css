@@ -26,6 +26,10 @@ img {
   text-align: center;
 }
 
+#display {
+  display: none;
+}
+
 #results p {
   margin-bottom: 20px;
 }

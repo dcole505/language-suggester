@@ -18,10 +18,6 @@ function resultTally(answers) {
     }
   });
 
-  console.log(countA);
-  console.log(countB);
-  console.log(countC);
-
   if(countA > countB && countA > countC) {
     $("#ruby").fadeIn();
     $("#java").hide();
