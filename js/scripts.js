@@ -27,6 +27,7 @@ function resultTally(answers) {
   } else {
     $("#python").fadeIn();
   }
+  $("#form-reveal").hide();
 }
 
 //User Interface Logic
@@ -55,5 +56,9 @@ $(document).ready(function() {
     $("#display").show();
 
     resultTally(answers);
+
+    $(".reload").click(function(){
+      location.reload(true);
+    });
   });
 })
