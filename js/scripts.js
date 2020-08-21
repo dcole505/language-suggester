@@ -20,24 +20,12 @@ function resultTally(answers) {
 
   if(countA > countB && countA > countC) {
     $("#ruby").fadeIn();
-    $("#java").hide();
-    $("#javascript").hide();
-    $("#python").hide();
   } else if (countB > countA && countB > countC) {
     $("#java").fadeIn();
-    $("#ruby").hide();
-    $("#javascript").hide();
-    $("#python").hide();
   } else if (countC > countA && countC > countB) {
     $("#javascript").fadeIn();
-    $("#ruby").hide();
-    $("#java").hide();
-    $("#python").hide();
   } else {
     $("#python").fadeIn();
-    $("#ruby").hide();
-    $("#java").hide();
-    $("#javascript").hide();
   }
 }
 
